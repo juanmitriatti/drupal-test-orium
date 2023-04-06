@@ -5,11 +5,6 @@ use Drupal\serialization\Normalizer\NormalizerBase;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
 class MovieNormalizer extends NormalizerBase implements NormalizerInterface {
-  /**
-   * The interface or class that this Normalizer supports.
-   *
-   * @var string|array
-   */
   
   /**
    * {@inheritdoc}
