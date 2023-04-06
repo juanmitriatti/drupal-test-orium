@@ -10,7 +10,7 @@ class MovieNormalizer extends NormalizerBase implements NormalizerInterface {
    * {@inheritdoc}
    */
   public function normalize($entity, $format = NULL, array $context = []) {
-    $genre='';
+    $genre = '';
     $genre_entities = $entity->get('genre')->referencedEntities();
     foreach ($genre_entities as $genre_entity) {
       $genre .= $genre_entity->get('name')->value.' ';  
