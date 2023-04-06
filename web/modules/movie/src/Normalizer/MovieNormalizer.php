@@ -8,13 +8,20 @@ class MovieNormalizer extends NormalizerBase {
    * {@inheritdoc}
    */
   public function normalize($entity, $format = NULL, array $context = []) {
-    // Normalize the entity.
-    $normalized = [
-      'id' => $entity->id(),
-      'name' => $entity->getName(),
-      'description' => $entity->getDescription(),
-    ];
-
+    //$normalized = parent::serialize($data, $format, $context);
+dump($entity);
+   $normalized = [];
+    foreach($entity as $ent) { 
+      // Normalize the entity.
+    /*  $normalized = [
+        'id' => $ent['id'],
+        'title' => $ent['title'],
+        'release_date' => $ent['release_date'],
+        'genre' => $ent['genre'],
+      ];*/
+      $normalized[] = $ent['id'];
+      echo $ent['id'];
+    }
     return $normalized;
   }
 
@@ -23,6 +30,7 @@ class MovieNormalizer extends NormalizerBase {
    */
   public function supportsNormalization($data, $format = NULL) {
     // Check if the data is an instance of your entity.
+    return TRUE;
     return $data instanceof movie;
   }
 }

@@ -19,8 +19,10 @@ use Drupal\serialization\Normalizer\JsonApiNormalizer;
  * Implements hook_views_data_alter().
  */
 function movie_views_data_alter(array &$data) {
-  // Attach the custom normalizer to the view.
-  $data['movie']['normalizer'] = 'movie.normalizer.movie';
+  $view = views_get_current_view();
+  if ($view && $view->current_display == 'rest_export_1') {
+    $data['movie']['normalizer'] = 'movie.normalizer.movie';
+  }
 }
 
 /**
