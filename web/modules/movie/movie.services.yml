@@ -1,0 +1,5 @@
+services:
+  movie.normalizer.movie:
+    class: Drupal\movie\Normalizer\MovieNormalizer
+    tags:
+      - { name: normalizer, priority: 100 }

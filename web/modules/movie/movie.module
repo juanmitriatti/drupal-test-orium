@@ -14,6 +14,15 @@ use Drupal\Core\DependencyInjection\ContainerBuilder;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\serialization\Normalizer\JsonApiNormalizer;
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function movie_views_data_alter(array &$data) {
+  // Attach the custom normalizer to the view.
+  $data['movie']['normalizer'] = 'movie.normalizer.movie';
+}
+
 /**
  * Implements hook_theme().
  */
