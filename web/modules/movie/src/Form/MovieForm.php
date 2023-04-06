@@ -28,7 +28,7 @@ class MovieForm extends ContentEntityForm {
       '#collapsible' => TRUE,
       '#collapsed' => FALSE,
     ];
-//dump($form);
+
     // Move existing inputs into the fieldset.
     $form['title']['#group'] = 'movie_fieldset';
     $form['genre']['#group'] = 'movie_fieldset';
