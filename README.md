@@ -5,6 +5,9 @@ For this challenge, we would like you to create a custom module, it's called mov
 Add movie's URL : 
 DDEV : https://baseurl.ddev.site/movie/add
 
+REST api movie : 
+DDEV : https://baseurl.ddev.site/movie-list?_format=json
+
 
 # Composer template for Drupal projects
 
