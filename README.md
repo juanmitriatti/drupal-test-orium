@@ -1,3 +1,6 @@
+# Drupal 8+ Module Development Challenge #5
+For this challenge, we would like you to create a custom module, it's called movie.
+
 # Composer template for Drupal projects
 
 [![CI](https://github.com/drupal-composer/drupal-project/actions/workflows/ci.yml/badge.svg?branch=9.x)](https://github.com/drupal-composer/drupal-project/actions/workflows/ci.yml)
