@@ -1,0 +1,5 @@
+#movie-add-form .fieldset__wrapper,
+#movie-edit-form .fieldset__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

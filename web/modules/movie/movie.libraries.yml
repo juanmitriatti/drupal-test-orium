@@ -1,0 +1,11 @@
+validation:
+  version: 1.0
+  js:
+    js/validation.js: {}
+  css:
+    theme:
+      css/form.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
